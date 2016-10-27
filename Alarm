@@ -1,0 +1,20 @@
+import time
+from webbrowser import open
+
+print ("ALARM CLOCK")
+print ("Set alarm in this form: 06.15\nThis alarm supports the 24-hour clock.")
+alarm = input("Set time: ")
+
+currenttime=time.strftime("%H.%M")
+    
+
+while currenttime != alarm:
+    print ("It is currently " + currenttime)
+    currenttime=time.strftime("%H.%M")
+    time.sleep(10) 
+
+if currenttime == alarm:
+    print ("Stop playing league\n"*5)
+    time.sleep(1)
+    open("www.google.com")
+    
