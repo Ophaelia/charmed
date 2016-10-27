@@ -1,0 +1,19 @@
+from turtle import*
+
+def pos(x,y):
+    up()
+    goto(x,y)
+    down()
+    
+def cce(r):
+    color(r)
+    begin_fill()
+    circle(100)
+    end_fill()
+    hideturtle()
+pos(0,240)
+cce('red')
+pos(0,0)
+cce("yellow")
+pos(0,-240)
+cce("green")
