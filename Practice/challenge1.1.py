@@ -1,4 +1,4 @@
-#amp the difficulty--use a function
+#pretty triangle spiral
 from turtle import*
 
 def go():
